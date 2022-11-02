@@ -32,6 +32,7 @@
     height: 90%;
     padding: 1rem;
     border-radius: 30px;
+    transition: 500ms;
 }
 .blog-details {
     width: 50%;
@@ -56,6 +57,16 @@
     text-decoration: none;
     color: #4392EA;
     font-size: 1.1rem;
+    transition: 500ms;
+}
+.read_more:hover {
+    font-size: 1.2rem;
+    transition: ease 500ms;
+}
+.image-container img:hover {
+    filter: brightness(0.6);
+    opacity: 0.8;
+    transition: all 500ms;
 }
 
 @media screen and (max-width: 850px){
