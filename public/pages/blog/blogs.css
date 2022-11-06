@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 .blogs-container {
+  background-image: url("/public/assets/bg-1.svg");
+  background-size: cover;
   font-family: "Poppins", sans-serif;
   width: 100%;
   display: flex;
@@ -13,13 +15,14 @@
   padding: 1rem;
 }
 .blogs-card {
+  background-color: #dae7f579;
   display: flex;
   width: 90%;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border-radius: 20px;
-  box-shadow: 3px 4px 20px #acacacaf;
+  box-shadow: 3px 4px 20px #2b2b2b67;
 }
 
 .image-container {
