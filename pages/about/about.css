@@ -88,8 +88,20 @@ color: aliceblue;
   .navlinks a:hover {
     background: whitesmoke;
   }
-  .mobile-menu {
+    .mobile-menu {
     display: initial;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .mobile-menu::before {
+    content: "\f0c9";
+    font-family: "fontAwesome";
+  }
+  .wrapper.active .mobile-menu::before {
+    content: "\f00d";
   }
   .navlinks.active {
     left: 0;

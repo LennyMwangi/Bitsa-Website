@@ -41,3 +41,6 @@ a {
 .shadow-md{
 box-shadow: 1px 1px 5px 0 lightgray;
 }
+.ml-10{
+  margin-left: 10px;
+}

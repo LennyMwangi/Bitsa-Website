@@ -131,30 +131,41 @@ section.hero {
   .wrapper.active .navlinks {
     background: #222257;
   }
-.navlinks a {
-      font-size: 1.1rem;
+  .navlinks a {
+    font-size: 1.1rem;
     width: 100vw;
     padding: 15px 0;
     text-indent: 4rem;
     letter-spacing: 1px;
-    border-bottom: .1px solid whitesmoke;
-}
-.wrapper.active .navlinks a{
-      border-bottom: .1px solid rgb(85, 84, 84);
-
+    border-bottom: 0.1px solid whitesmoke;
+  }
+  .wrapper.active .navlinks a {
+    border-bottom: 0.1px solid rgb(85, 84, 84);
   }
   .navlinks a:hover {
     background: whitesmoke;
   }
   .mobile-menu {
     display: initial;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .mobile-menu::before {
+    content: "\f0c9";
+    font-family: "fontAwesome";
+  }
+  .wrapper.active .mobile-menu::before {
+    content: "\f00d";
   }
   .navlinks.active {
     left: 0;
   }
 }
 @media (max-width: 768px) {
-nav {
-  padding: 0 10px;
-}
+  nav {
+    padding: 0 10px;
+  }
 }
