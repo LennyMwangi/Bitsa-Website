@@ -15,7 +15,7 @@
   padding: 1rem;
 }
 .blogs-card {
-  background-color: #dae7f579;
+  background-color: #dae7f583;
   display: flex;
   width: 90%;
   flex-direction: row;
@@ -58,9 +58,12 @@
 }
 .read_more {
   text-decoration: none;
-  color: #4392ea;
+  color: #ffdfff;
   font-size: 1.1rem;
   transition: 500ms;
+  background-color: #0059ff;
+  padding: 0.8rem;
+  border-radius: 15px;
 }
 .read_more:hover {
   font-size: 1.2rem;
@@ -99,12 +102,5 @@
     text-align: justify;
     font-size: 1rem;
     padding: 1rem;
-  }
-  .read_more {
-    display: none;
-  }
-  .s-screen a {
-    display: inline;
-    font-size: 1rem;
   }
 }
