@@ -44,6 +44,7 @@ body {
   padding: 1rem;
   border-radius: 30px;
   transition: 500ms;
+  object-fit: cover;
 }
 .blog-details {
   width: 50%;
