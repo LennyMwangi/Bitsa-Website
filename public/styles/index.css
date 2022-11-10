@@ -123,14 +123,12 @@ section.hero {
     position: absolute;
     top: 80px;
     flex-direction: column;
-    left: -100%;
+    left: -200%;
     width: 100%;
     background: white;
     transition: all 0.3s ease-out;
   }
-  .wrapper.active .navlinks {
-    background: #222257;
-  }
+
   .navlinks a {
     font-size: 1.1rem;
     width: 100vw;
@@ -139,12 +137,13 @@ section.hero {
     letter-spacing: 1px;
     border-bottom: 0.1px solid whitesmoke;
   }
-  .wrapper.active .navlinks a {
-    border-bottom: 0.1px solid rgb(85, 84, 84);
-  }
+
   .navlinks a:hover {
     background: whitesmoke;
   }
+   .navlinks.active {
+    left: 0;
+  } 
   .mobile-menu {
     display: initial;
     border: none;
@@ -157,11 +156,8 @@ section.hero {
     content: "\f0c9";
     font-family: "fontAwesome";
   }
-  .wrapper.active .mobile-menu::before {
+  .navlinks.active .mobile-menu::before {
     content: "\f00d";
-  }
-  .navlinks.active {
-    left: 0;
   }
 }
 @media (max-width: 768px) {
