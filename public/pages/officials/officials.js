@@ -5,7 +5,7 @@ const officialsArray = [
     yearOfService: "2021-2022",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "images.jpeg",
+    image: "/images.jpeg",
   },
   {
     name: "Lucy Samuel",
