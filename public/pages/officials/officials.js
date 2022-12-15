@@ -13,7 +13,7 @@ const officialsArray = [
     yearOfService: "2022-2023",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "images.jpeg",
+    image: "/images.jpeg",
   },
   {
     name: "Moses Samson",
@@ -21,7 +21,7 @@ const officialsArray = [
     yearOfService: "2021-2022",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "images.jpeg",
+    image: "/images.jpeg",
   },
   {
     name: "Vallery Rose",
@@ -29,7 +29,7 @@ const officialsArray = [
     yearOfService: "2022-2023",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "images.jpeg",
+    image: "/images.jpeg",
   },
   {
     name: "Jane Rose",
@@ -37,7 +37,7 @@ const officialsArray = [
     yearOfService: "2021-2022",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "images.jpeg",
+    image: "/images.jpeg",
   },
   {
     name: "Franklin Roberts",
@@ -45,7 +45,7 @@ const officialsArray = [
     yearOfService: "2022-2023",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "images.jpeg",
+    image: "/images.jpeg",
   },
 ];
 
