@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <script src="officials.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -22,7 +23,7 @@
         <div class="image_and_description flex" data-filter="2021-2022">
           <div>
             <div class="image">
-              <img src="images.jpeg" alt="image of a person" />
+              <img src="/images.jpeg" alt="image of a person" />
             </div>
             <div class="icons">
               <button><i class="fa fa-trash" aria-hidden="true"></i></button>
@@ -42,13 +43,6 @@
                 <span class="service-year">2021-2022</span>
               </div>
               <div class="details">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Optio, consequuntur, dolore illum nam adipisci praesentium
-                  earum aliquam doloribus mollitia eius atque totam laborum
-                  veritatis
-                </p>
-                <button class="btn-more"><a href="#">More Details</a></button>
               </div>
             </div>
           </div>
@@ -56,7 +50,7 @@
         <div class="image_and_description flex" data-filter="2022-2023">
           <div>
             <div class="image">
-              <img src="images.jpeg" alt="image of a person" />
+              <img src="/images.jpeg" alt="image of a person" />
             </div>
             <div class="icons">
               <button><i class="fa fa-trash" aria-hidden="true"></i></button>
@@ -76,13 +70,6 @@
                 <span class="service-year">2022-2023</span>
               </div>
               <div class="details">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Optio, consequuntur, dolore illum nam adipisci praesentium
-                  earum aliquam doloribus mollitia eius atque totam laborum
-                  veritatis
-                </p>
-                <button class="btn-more"><a href="#">More Details</a></button>
               </div>
             </div>
           </div>
@@ -90,7 +77,7 @@
         <div class="image_and_description flex" data-filter="2021-2022">
           <div>
             <div class="image">
-              <img src="images.jpeg" alt="image of a person" />
+              <img src="/images.jpeg" alt="image of a person" />
             </div>
             <div class="icons">
               <button><i class="fa fa-trash" aria-hidden="true"></i></button>
@@ -110,13 +97,6 @@
                 <span class="service-year">2021-2022</span>
               </div>
               <div class="details">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Optio, consequuntur, dolore illum nam adipisci praesentium
-                  earum aliquam doloribus mollitia eius atque totam laborum
-                  veritatis
-                </p>
-                <button class="btn-more"><a href="#">More Details</a></button>
               </div>
             </div>
           </div>
@@ -124,7 +104,7 @@
         <div class="image_and_description flex" data-filter="2022-2023">
           <div>
             <div class="image">
-              <img src="images.jpeg" alt="image of a person" />
+              <img src="/images.jpeg" alt="image of a person" />
             </div>
             <div class="icons">
               <button><i class="fa fa-trash" aria-hidden="true"></i></button>
@@ -144,13 +124,6 @@
                 <span class="service-year">2022-2023</span>
               </div>
               <div class="details">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Optio, consequuntur, dolore illum nam adipisci praesentium
-                  earum aliquam doloribus mollitia eius atque totam laborum
-                  veritatis
-                </p>
-                <button class="btn-more"><a href="#">More Details</a></button>
               </div>
             </div>
           </div>
@@ -159,7 +132,7 @@
         <div class="image_and_description flex" data-filter="2021-2022">
           <div>
             <div class="image">
-              <img src="images.jpeg" alt="image of a person" />
+              <img src="/images.jpeg" alt="image of a person" />
             </div>
             <div class="icons">
               <button><i class="fa fa-trash" aria-hidden="true"></i></button>
@@ -179,13 +152,6 @@
                 <span class="service-year">2021-2022</span>
               </div>
               <div class="details">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Optio, consequuntur, dolore illum nam adipisci praesentium
-                  earum aliquam doloribus mollitia eius atque totam laborum
-                  veritatis
-                </p>
-                <button class="btn-more"><a href="#">More Details</a></button>
               </div>
             </div>
           </div>
@@ -194,7 +160,7 @@
         <div class="image_and_description flex" data-filter="2022-2023">
           <div>
             <div class="image">
-              <img src="images.jpeg" alt="image of a person" />
+              <img src="/images.jpeg" alt="image of a person" />
             </div>
             <div class="icons">
               <button><i class="fa fa-trash" aria-hidden="true"></i></button>
@@ -214,42 +180,11 @@
                 <span class="service-year">2022-2023</span>
               </div>
               <div class="details">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Optio, consequuntur, dolore illum nam adipisci praesentium
-                  earum aliquam doloribus mollitia eius atque totam laborum
-                  veritatis
-                </p>
-                <button class="btn-more"><a href="#">More Details</a></button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <script>
-      const filterButtons = document.querySelectorAll(".year");
-      const cardItems = document.querySelectorAll(".image_and_description");
-
-      filterButtons.forEach((btn) => {
-        btn.onclick = function () {
-          filterButtons.forEach((btn) => {
-            btn.className = "year";
-          });
-          btn.className = "active";
-          const value = btn.textContent;
-          cardItems.forEach((cardItem) => {
-            cardItem.style.display = "none";
-            if (
-              cardItem.getAttribute("data-filter") == value.toLowerCase() ||
-              value == "All"
-            ) {
-              cardItem.style.display = "flex";
-            }
-          });
-        };
-      });
-    </script>
   </body>
 </html>
