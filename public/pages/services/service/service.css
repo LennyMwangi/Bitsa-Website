@@ -44,6 +44,7 @@
   align-items: center;
   justify-content: space-evenly;
   font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 .pricing button {
   padding: 0.9rem;

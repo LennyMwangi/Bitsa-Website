@@ -3,6 +3,7 @@
   margin-top: 1rem;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -24,7 +25,7 @@
 }
 
 .service p {
-  margin-bottom: 1rem;
+  font-size: 1.1rem;
   text-align: justify;
 }
 .service span {
@@ -43,6 +44,12 @@
   font-weight: 550;
   color: #e9e9e9;
   background-color: #0059ffe0;
+  transition: ease 200ms;
+}
+.btn:hover {
+  background-color: #0054f0e7;
+  box-shadow: 2px 2px 10px #b3b3b3d2;
+  color: #f7f7f7;
 }
 
 @media screen and (max-width: 750px) {
