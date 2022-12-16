@@ -19,7 +19,7 @@ a {
   color: var(--dark-text);
 }
 .wrapper {
-  background: url("/bg-1.svg") no-repeat;
+  background: url("../assets/bg-1.svg") no-repeat;
   background-size: cover;
   transition: all 0.1s ease-in;
 }
