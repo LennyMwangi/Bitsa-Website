@@ -90,7 +90,7 @@ function displayOfficials() {
     parentDiv.innerHTML = `
     <div>
           <div class="image">
-            <img src=${official.image} alt="image of a person" />
+            <img src=${official.image} width="151" alt="image of a person" />
           </div>
           <div class="icons">
             <button><i class="fa fa-trash" aria-hidden="true"></i></button>
