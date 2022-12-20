@@ -134,12 +134,12 @@ function readMore(official) {
     <button class="click"><i class="fa-sharp fa-solid fa-xmark"></i></button>
     <div class="official-info">
     <div class="name">${official.name}</div>
+    <p class="title">${official.title} (${official.yearOfService})</p>
     <div class="flexed">
     <div class="image">
       <img src=${official.image} alt="this is an image">
     </div>
       <div class="paragraph">
-        <p class="title">${official.title} (${official.yearOfService})</p>
         <p>${official.message}</p>
       </div>
     </div>
