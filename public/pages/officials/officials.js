@@ -5,7 +5,7 @@ const officialsArray = [
     yearOfService: "2021-2022",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "/images/images.jpeg",
+    image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV6xNW0zfFqIjO_huPUd5KN-62F-M45DQKEvb0d0zZCc1DWx9u",
     id: 0,
   },
   {
@@ -14,7 +14,7 @@ const officialsArray = [
     yearOfService: "2022-2023",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "/images/images.jpeg",
+    image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV6xNW0zfFqIjO_huPUd5KN-62F-M45DQKEvb0d0zZCc1DWx9u",
     id: 1,
   },
   {
@@ -23,7 +23,7 @@ const officialsArray = [
     yearOfService: "2021-2022",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "/images/images.jpeg",
+    image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV6xNW0zfFqIjO_huPUd5KN-62F-M45DQKEvb0d0zZCc1DWx9u",
     id: 2,
   },
   {
@@ -32,7 +32,7 @@ const officialsArray = [
     yearOfService: "2022-2023",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "/images/images.jpeg",
+    image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV6xNW0zfFqIjO_huPUd5KN-62F-M45DQKEvb0d0zZCc1DWx9u",
     id: 3,
   },
   {
@@ -41,7 +41,7 @@ const officialsArray = [
     yearOfService: "2021-2022",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "/images/images.jpeg",
+    image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV6xNW0zfFqIjO_huPUd5KN-62F-M45DQKEvb0d0zZCc1DWx9u",
     id: 4,
   },
   {
@@ -50,7 +50,7 @@ const officialsArray = [
     yearOfService: "2022-2023",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "/images/images.jpeg",
+    image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV6xNW0zfFqIjO_huPUd5KN-62F-M45DQKEvb0d0zZCc1DWx9u",
     id: 5,
   },
 ];
