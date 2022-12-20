@@ -139,7 +139,7 @@ function readMore(official) {
       <img src=${official.image} alt="this is an image">
     </div>
       <div class="paragraph">
-        <p class="title">${official.title}</p>
+        <p class="title">${official.title} (${official.yearOfService})</p>
         <p>${official.message}</p>
       </div>
     </div>
