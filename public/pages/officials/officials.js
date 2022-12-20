@@ -5,7 +5,8 @@ const officialsArray = [
     yearOfService: "2021-2022",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "images/images.jpeg",
+    image: "/images/images.jpeg",
+    id: 0,
   },
   {
     name: "Lucy Samuel",
@@ -13,7 +14,8 @@ const officialsArray = [
     yearOfService: "2022-2023",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "images/images.jpeg",
+    image: "/images/images.jpeg",
+    id: 1,
   },
   {
     name: "Moses Samson",
@@ -21,7 +23,8 @@ const officialsArray = [
     yearOfService: "2021-2022",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "images/images.jpeg",
+    image: "/images/images.jpeg",
+    id: 2,
   },
   {
     name: "Vallery Rose",
@@ -29,7 +32,8 @@ const officialsArray = [
     yearOfService: "2022-2023",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "images/images.jpeg",
+    image: "/images/images.jpeg",
+    id: 3,
   },
   {
     name: "Jane Rose",
@@ -37,7 +41,8 @@ const officialsArray = [
     yearOfService: "2021-2022",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "images/images.jpeg",
+    image: "/images/images.jpeg",
+    id: 4,
   },
   {
     name: "Franklin Roberts",
@@ -45,7 +50,8 @@ const officialsArray = [
     yearOfService: "2022-2023",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consequuntur, dolore illum nam adipisci praesentium earum aliquam doloribus mollitia eius atque totam laborum veritatis",
-    image: "images/images.jpeg",
+    image: "/images/images.jpeg",
+    id: 5,
   },
 ];
 
@@ -75,11 +81,14 @@ function officialsFilter() {
 const officialsWrapper = document.querySelector(".wrapper");
 
 function displayOfficials() {
-  let displayOfficial = officialsArray.map((official) => {
-    return `<div class="image_and_description flex" data-filter=${
-      official.yearOfService
-    }>
-        <div>
+  let count = 80;
+  officialsArray.forEach((official) => {
+    let parentDiv = document.createElement("div");
+    parentDiv.classList.add("image_and_description");
+    parentDiv.classList.add("flex");
+    parentDiv.setAttribute("data-filter", `${official.yearOfService}`);
+    parentDiv.innerHTML = `
+    <div>
           <div class="image">
             <img src=${official.image} alt="image of a person" />
           </div>
@@ -101,16 +110,45 @@ function displayOfficials() {
               <span class="service-year">${official.yearOfService}</span>
             </div>
             <div class="details">
-            <p class="detail">${official.message.slice(0, 152) + " ...."}</p >
-            <button class="btn-more">More Details</button>
+            <p class="detail">${official.message.slice(0, count) + " ...."}</p >
+            <button class="btn-more" id=${official.id}>More Details</button>
             </div>
           </div>
-        </div>
-      </div>
-      `;
+        </div>`;
+    officialsWrapper.appendChild(parentDiv);
+    let targetBtn =
+      parentDiv.lastElementChild.lastElementChild.lastElementChild
+        .lastElementChild;
+    targetBtn.addEventListener("click", () => {
+      readMore(official);
+    });
   });
-  displayOfficial = displayOfficial.join("");
-  officialsWrapper.innerHTML = displayOfficial;
+}
+
+function readMore(official) {
+  const officialContainer = document.querySelector(".officials-container");
+  document.body.style.pointerEvents = "none";
+  officialContainer.classList.remove("hide");
+  officialContainer.style.pointerEvents = "all";
+  officialContainer.innerHTML = `
+    <button class="click"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+    <div class="official-info">
+    <div class="name">${official.name}</div>
+    <div class="flexed">
+    <div class="image">
+      <img src=${official.image} alt="this is an image">
+    </div>
+      <div class="paragraph">
+        <p class="title">${official.title}</p>
+        <p>${official.message}</p>
+      </div>
+    </div>
+  </div>`;
+  let closePopUp = officialContainer.firstElementChild;
+  closePopUp.addEventListener("click", () => {
+    officialContainer.classList.add("hide");
+    document.body.style.pointerEvents = "all";
+  });
 }
 
 displayOfficials();

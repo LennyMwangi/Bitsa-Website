@@ -134,3 +134,81 @@
 .hide {
     display: none;
 }
+
+.officials-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    background-color: #152238;
+    padding: 8rem 0;
+}
+
+.officials-container button {
+    cursor: pointer;
+}
+
+.officials-container > button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px 5px;
+    background-color: maroon;
+}
+
+.officials-container .fa-sharp {
+    font-size: 50px;
+    color: white;
+}
+
+.official-info {
+    margin-top: -2rem;
+}
+
+.official-info .name {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.flexed {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flexed img {
+    width: 400px;
+    height: 400px;
+}
+
+.flexed .paragraph {
+    width: 400px;
+    margin-left: 40px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.officials-container button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph .title {
+    font-family: sans-serif;
+    font-size: 28px;
+    margin-bottom: 3rem;
+}
