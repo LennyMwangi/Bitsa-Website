@@ -4,6 +4,11 @@
     box-sizing: border-box;
     color: white;
 }
+.main {
+    filter: blur(5px);
+    background: rgba(0,0,0,0.08);
+    transition: filter 0ms ease-in-out 0ms;
+}
 
 .wrapper {
     max-width: 1600px;
@@ -131,21 +136,22 @@
     text-decoration: none;
 }
 
+.officials-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1000px;
+    width: 100%;
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 5px;
+}
+
 .hide {
     display: none;
 }
 
-.officials-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 1200px;
-    width: 100%;
-    height: auto;
-    background-color: #252525;
-    padding: 8rem 0;
-}
 
 .officials-container button {
     cursor: pointer;
@@ -160,12 +166,12 @@
 }
 
 .officials-container .fa-sharp {
-    font-size: 50px;
+    font-size: 40px;
     color: white;
 }
 
 .official-info {
-    margin-top: -2rem;
+    margin-top: 2rem;
 }
 
 .official-info .name {
@@ -174,7 +180,7 @@
     font-size: 30px;
 }
 
-.flexed {
+.official-info .flexed {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -191,16 +197,17 @@
     height: 400px;
     line-height: 25px;
     font-size: 20px;
+    margin-top: 20px;
 }
 
 .officials-container button {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: 1px solid black;
     border-radius: 5px;
 }
 
-.title {
+.official-title {
     text-align: center;
     font-family: sans-serif;
     font-size: 28px;

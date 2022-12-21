@@ -90,7 +90,7 @@ function displayOfficials() {
     parentDiv.innerHTML = `
     <div>
           <div class="image">
-            <img src=${official.image} width="151" alt="image of a person" />
+            <img src=${official.image} style="width:151px; height:129px" alt="image of a person" />
           </div>
           <div class="icons">
             <button><i class="fa fa-trash" aria-hidden="true"></i></button>
@@ -127,17 +127,20 @@ function displayOfficials() {
 
 function readMore(official) {
   const officialContainer = document.querySelector(".officials-container");
+  let container = document.querySelector(".container")
   document.body.style.pointerEvents = "none";
+  
   officialContainer.classList.remove("hide");
+  container.classList.add("main");
   officialContainer.style.pointerEvents = "all";
   officialContainer.innerHTML = `
     <button class="click"><i class="fa-sharp fa-solid fa-xmark"></i></button>
     <div class="official-info">
     <div class="name">${official.name}</div>
-    <p class="title">${official.title} (${official.yearOfService})</p>
+    <p class="official-title">${official.title} (${official.yearOfService})</p>
     <div class="flexed">
     <div class="image">
-      <img src=${official.image} alt="this is an image">
+      <img src=${official.image} alt="this is an image" style="width:231px; height:209px" height="129">
     </div>
       <div class="paragraph">
         <p>${official.message}</p>
@@ -148,6 +151,7 @@ function readMore(official) {
   closePopUp.addEventListener("click", () => {
     officialContainer.classList.add("hide");
     document.body.style.pointerEvents = "all";
+    container.classList.remove("main");
   });
 }
 
