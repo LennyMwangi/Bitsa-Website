@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineCiCircle, AiOutlineGithub, AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai'
+import { AiOutlineCiCircle, AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai'
 import { TbWorldWww } from 'react-icons/tb'
 import Link from 'next/link'
 import { data } from '../data';
@@ -18,7 +18,7 @@ const Developers = () => {
                         </h1>
                     </div>
                 </div>
-                <div className="w-full bg-gray-100 px-10 pt-10">
+                <div className="w-full bg-gray-100 px-10 pt-10 sm:b-5">
                     <div className="container mx-auto">
                         <div
                             role="list"
