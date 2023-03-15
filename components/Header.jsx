@@ -36,14 +36,13 @@ const Header = () => {
                     </Link>
                 </div>
 
-                <div className="flex items-center">
+                <div className="flex items-center px-5">
                     <ul className={`${active ? 'active' : ''} navlinks`}>
                         {NavLinks.map(({ href, name }, index) => {
                             return <Link onClick={() => setActive(false)} key={index} className={`${path === href ? 'text-blue-500 bg-gray-100 border-b border-blue-200' : ''} text-md hover:bg-gray-100  w-full py-2  md:px-3 mx-1 md:rounded-lg`} href={href}>{name}</Link>
                         })}
                     </ul>
                     <div className="relative flex items-center ml-5 space-x-5">
-                    
                         <button className='cursor-pointer md:hidden' onClick={handleMobileMenu}>
                             {active ? <AiOutlineClose size={24} /> :
                                 <AiOutlineMenu size={24} />
