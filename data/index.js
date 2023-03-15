@@ -100,7 +100,7 @@ export const data = {
       name: "Titus Rono",
       role: "Software Rep",
       avatar:
-        "https://static.vecteezy.com/system/resources/previews/002/400/532/original/young-happy-businessman-character-avatar-wearing-business-outfit-isolated-free-vector.jpg",
+        "/assets/rono.jpeg",
     },
     {
       name: "Joseph Chuchu",
@@ -112,7 +112,7 @@ export const data = {
       name: "Grace Muthoni",
       role: "Secretary",
       avatar:
-        "https://static.vecteezy.com/system/resources/previews/002/400/532/original/young-happy-businessman-character-avatar-wearing-business-outfit-isolated-free-vector.jpg",
+        "/assets/grace.jpeg",
     },
     {
       name: "Odero Otieno",
@@ -124,13 +124,13 @@ export const data = {
       name: "Wilfred Manyara",
       role: "Treasurer",
       avatar:
-        "https://static.vecteezy.com/system/resources/previews/002/400/532/original/young-happy-businessman-character-avatar-wearing-business-outfit-isolated-free-vector.jpg",
+        "/assets/wilfred.png",
     },
     {
       name: "Ogwanda Makayo",
       role: "Diploma Rep",
       avatar:
-        "https://static.vecteezy.com/system/resources/previews/002/400/532/original/young-happy-businessman-character-avatar-wearing-business-outfit-isolated-free-vector.jpg",
+        "/assets/magwanda.jpeg",
     },
   ],
 };
