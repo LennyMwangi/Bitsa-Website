@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navlinks {
+    @apply flex items-center;
+}
+@media (max-width: 1010px) {
+    .navlinks{
+        z-index: 20;
+        top: -100vh;
+        @apply absolute flex-col items-start min-h-fit  pb-5 w-full right-0 bg-white shadow-md p-5  transition-all;
+        
+    }
+    .navlinks.active{
+        top: 102px;
+        visibility: visible;
+    }
+}
+.hero{
+    position: relative;
+    min-height: 70vh;
+    @apply bg-gray-100;
+}
+.opacity{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    background: #000;
+}
