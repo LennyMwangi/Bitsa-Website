@@ -44,8 +44,8 @@ export const data = {
       name: "Musau Ernest",
       role: "",
       bio: " ",
-      github: "https://github.com/musaubruian",
-      twitter: "https://twitter.com/musaubrian",
+      github: "https://github.com/musaubrian",
+      twitter: "https://twitter.com/_musaubrian",
       website: "https://musaubrian.netlify.app",
     },
 
@@ -53,7 +53,18 @@ export const data = {
       avatar:
         "https://static.vecteezy.com/system/resources/previews/002/400/532/original/young-happy-businessman-character-avatar-wearing-business-outfit-isolated-free-vector.jpg",
       alt: "blank",
-      name: "Joseph Chuchu",
+      name: "Elvis M",
+      role: "",
+      bio: "",
+      github: "",
+      twitter: "",
+      website: "",
+    },
+    {
+      avatar:
+        "https://static.vecteezy.com/system/resources/previews/002/400/532/original/young-happy-businessman-character-avatar-wearing-business-outfit-isolated-free-vector.jpg",
+      alt: "blank",
+      name: "Lenny K",
       role: "",
       bio: "",
       github: "",
