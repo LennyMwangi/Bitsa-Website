@@ -17,7 +17,7 @@ function EventCard() {
                 <div className="lg:flex  rounded-lg shadow-md md:shadow-none md:border px-2">
                     <div className="bg-gradient-to-tr from-sky-300 to-blue-500  shadow-md rounded-lg lg:w-2/12 py-4 block h-full ">
                         <div className="text-center tracking-wide">
-                            <div className="text-white font-bold text-4xl ">To be </div>
+                            <div className="text-white font-bold text-4xl ">To be</div>
                             <div className="text-white font-normal text-2xl">Announced</div>
                         </div>
                     </div>
