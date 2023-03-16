@@ -17,8 +17,8 @@ function EventCard() {
                 <div className="lg:flex  rounded-lg shadow-md md:shadow-none md:border px-2">
                     <div className="bg-gradient-to-tr from-sky-300 to-blue-500  shadow-md rounded-lg lg:w-2/12 py-4 block h-full ">
                         <div className="text-center tracking-wide">
-                            <div className="text-white font-bold text-4xl ">15</div>
-                            <div className="text-white font-normal text-2xl">March</div>
+                            <div className="text-white font-bold text-4xl ">To be </div>
+                            <div className="text-white font-normal text-2xl">Announced</div>
                         </div>
                     </div>
                     <div className="w-full  px-5 bg-white py-5 lg:px-2 lg:py-2 tracking-wide">
@@ -27,7 +27,7 @@ function EventCard() {
                                 <i className="far fa-clock" /> 11:30 AM
                             </div>
                             <div className="text-gray-700 font-medium text-sm text-center lg:text-left px-2">
-                                Organiser : Academy Patrons
+                                Organiser : ISC Department
                             </div>
                         </div>
                         <div className="font-semibold text-gray-800 text-xl text-center lg:text-left px-2">
