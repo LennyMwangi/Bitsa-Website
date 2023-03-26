@@ -46,7 +46,7 @@ export const data = {
       bio: " ",
       github: "https://github.com/musaubrian",
       twitter: "https://twitter.com/_musaubrian",
-      website: "https://musaubrian.netlify.app",
+      website: "https://musaubrian.vercel.app",
     },
 
     {
@@ -77,8 +77,8 @@ export const data = {
       banner:
         "https://cloudfront-us-east-2.images.arcpublishing.com/reuters/44RTBPTQEBOPJJS4DZGDBIRFWI.jpg",
       alt: "blank",
-      name: "Huawei Baraton Academy Registration",
-      status: "Ongoing",
+      name: "Huawei Baraton Academy Launch",
+      status: "Coming soon",
       info: " The Manager's role in managing the clubs content flow, is to establish an atmosphere that promotes knowledge sharing and collaboration.",
     },
   ],
@@ -110,8 +110,7 @@ export const data = {
     {
       name: "Titus Rono",
       role: "Software Rep",
-      avatar:
-        "/assets/rono.jpeg",
+      avatar: "/assets/rono.jpeg",
     },
     {
       name: "Joseph Chuchu",
@@ -122,8 +121,7 @@ export const data = {
     {
       name: "Grace Muthoni",
       role: "Secretary",
-      avatar:
-        "/assets/grace.jpeg",
+      avatar: "/assets/grace.jpeg",
     },
     {
       name: "Odero Otieno",
@@ -134,14 +132,12 @@ export const data = {
     {
       name: "Wilfred Manyara",
       role: "Treasurer",
-      avatar:
-        "/assets/wilfred.png",
+      avatar: "/assets/wilfred.png",
     },
     {
       name: "Ogwanda Makayo",
       role: "Diploma Rep",
-      avatar:
-        "/assets/magwanda.jpeg",
+      avatar: "/assets/magwanda.jpeg",
     },
   ],
 };
