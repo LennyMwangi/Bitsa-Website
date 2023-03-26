@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { data } from "../../data/index";
 import {} from "react-icons/ai";
-import { v4 as uuidv4 } from "uuid";
 import Image from "next/image";
 
 export const Events = () => {
@@ -39,22 +38,19 @@ export const Events = () => {
                   </div>
                   <div className="rounded overflow-hidden shadow-md bg-white">
                     <div className="px-6 mt-10 flex flex-col">
-                      <h1 className="font-bold text-4xl text-center mb-1">
+                      <h1 className="font-bold text-3xl text-center mb-1">
                         {event.name}
                       </h1>
                       <p className="text-gray-800 text-sm text-center">
                         {event.status}
                       </p>
 
-                      <p className="text-center text-gray-600 text-base pt-3 font-normal">
-                        {event.info}
-                      </p>
-                      <p className="text-orange-400 text-center my-2">
+                      <p className="text-center text-gray-600 text-base p-3 my-2 font-normal">
                         Due to unforseen circumstances this event has been
                         postponed until further notice.
-                        <br />
                       </p>
-                      <span className="text-center text-gray-800">
+                      {/* <p className="text-red-400 text-center my-2"></p> */}
+                      <span className="text-center text-gray-700">
                         You can still register for the competition though
                       </span>
                       <div className="w-full  pt-5 pb-8 flex justify-center">
