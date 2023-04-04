@@ -53,7 +53,7 @@ export const data = {
       avatar:
         "https://static.vecteezy.com/system/resources/previews/002/400/532/original/young-happy-businessman-character-avatar-wearing-business-outfit-isolated-free-vector.jpg",
       alt: "blank",
-      name: "Elvis M",
+      name: "Elvis Ndubi",
       role: "",
       bio: "",
       github: "",
@@ -64,12 +64,12 @@ export const data = {
       avatar:
         "https://static.vecteezy.com/system/resources/previews/002/400/532/original/young-happy-businessman-character-avatar-wearing-business-outfit-isolated-free-vector.jpg",
       alt: "blank",
-      name: "Lenny K",
+      name: "Lenny Mwangi",
       role: "",
       bio: "",
-      github: "",
+      github: "https://github.com/LennyMwangi",
       twitter: "",
-      website: "",
+      website: "https://lennymwangi.github.io/portfolio.github.io/",
     },
   ],
   events: [
